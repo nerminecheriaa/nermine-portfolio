@@ -54,7 +54,7 @@ export default function Home() {
         </div>
 
         <a
-          href="/cv/Nermine_Cheriaa_CV.pdf"
+          href="/cv/Nermine_Cheriaa_Cv.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="nav-cv"
