@@ -66,7 +66,7 @@ export default function Home() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-content">
-          <p className="eyebrow">AI ENGINEERING STUDENT</p>
+          <p className="eyebrow">NERMINE CHERIAA • AI ENGINEERING STUDENT</p>
 
           <h1>
             Building intelligent systems
