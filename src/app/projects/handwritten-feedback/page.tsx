@@ -15,6 +15,7 @@ export default function HandwrittenFeedbackPage() {
         </Link>
       </nav>
 
+
       {/* Hero */}
       <section className="project-hero">
 
@@ -32,9 +33,9 @@ export default function HandwrittenFeedbackPage() {
         </p>
 
         <p className="project-description">
-          An AI-powered document analysis pipeline that transforms
-          handwritten student feedback into structured, classified data
-          using Vision-Language Models.
+          An AI-powered system that transforms handwritten student feedback
+          into structured insights using Vision-Language Models, automated
+          expectation extraction, and sentiment classification.
         </p>
 
         <div className="project-buttons">
@@ -49,15 +50,16 @@ export default function HandwrittenFeedbackPage() {
           </a>
 
           <a
-            href="#overview"
+            href="#demo"
             className="project-button secondary"
           >
-            Explore project ↓
+            View demo ↓
           </a>
 
         </div>
 
       </section>
+
 
       {/* Project information */}
       <section className="project-info">
@@ -84,8 +86,9 @@ export default function HandwrittenFeedbackPage() {
 
       </section>
 
+
       {/* Overview */}
-      <section id="overview" className="project-section">
+      <section className="project-section">
 
         <div className="section-number">
           01 — OVERVIEW
@@ -113,8 +116,9 @@ export default function HandwrittenFeedbackPage() {
             </p>
 
             <p>
-              The resulting feedback is then analyzed and classified
-              according to predefined categories and sentiment.
+              The extracted information is then analyzed to identify
+              individual student expectations and classify them by category
+              and sentiment.
             </p>
 
           </div>
@@ -123,7 +127,8 @@ export default function HandwrittenFeedbackPage() {
 
       </section>
 
-      {/* Pipeline */}
+
+      {/* AI Pipeline */}
       <section className="project-section">
 
         <div className="section-number">
@@ -144,11 +149,12 @@ export default function HandwrittenFeedbackPage() {
               <h3>Document Upload</h3>
 
               <p>
-                The user uploads a handwritten student feedback form
-                through the application interface.
+                A handwritten student feedback form is uploaded through
+                the application.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>02</span>
@@ -157,11 +163,12 @@ export default function HandwrittenFeedbackPage() {
               <h3>Vision Analysis</h3>
 
               <p>
-                Gemini Vision analyzes the handwritten document and
-                extracts its textual content.
+                Gemini Vision processes the handwritten document and
+                interprets its visual and textual content.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>03</span>
@@ -170,11 +177,12 @@ export default function HandwrittenFeedbackPage() {
               <h3>Transcription</h3>
 
               <p>
-                The handwritten responses are converted into structured
-                text that can be processed by downstream components.
+                The handwritten responses are converted into digital text
+                for downstream processing.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>04</span>
@@ -184,33 +192,36 @@ export default function HandwrittenFeedbackPage() {
 
               <p>
                 Individual student expectations are identified and
-                separated from the original document.
+                separated from the original response.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>05</span>
 
             <div>
-              <h3>Classification</h3>
+              <h3>Category Classification</h3>
 
               <p>
-                Extracted expectations are classified according to their
-                category and sentiment.
+                Each expectation is assigned to a predefined category such
+                as Learning, Career, Networking, or Technical Skills.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>06</span>
 
             <div>
-              <h3>Structured Output</h3>
+              <h3>Sentiment Classification</h3>
 
               <p>
-                The system produces structured results that can be used
-                for further analysis or reporting.
+                Expectations are classified as Positive or Negative based
+                on what the student wants, expects, dislikes, or wants to
+                avoid.
               </p>
             </div>
           </div>
@@ -219,11 +230,175 @@ export default function HandwrittenFeedbackPage() {
 
       </section>
 
-      {/* Architecture */}
+
+      {/* Demo / Visuals */}
+      <section id="demo" className="project-section">
+
+        <div className="section-number">
+          03 — PROJECT DEMO
+        </div>
+
+        <h2 className="section-title">
+          From handwritten input
+          <span> to AI-generated results.</span>
+        </h2>
+
+        <p className="section-intro">
+          The application provides an interactive workflow where a handwritten
+          feedback form can be uploaded, transcribed, analyzed, and converted
+          into structured results.
+        </p>
+
+        <div className="demo-placeholder">
+
+          <div className="demo-placeholder-inner">
+
+            <span>PROJECT SCREENSHOTS</span>
+
+            <p>
+              Add application screenshots here
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* Classification */}
       <section className="project-section">
 
         <div className="section-number">
-          03 — TECHNICAL ARCHITECTURE
+          04 — CLASSIFICATION
+        </div>
+
+        <h2 className="section-title">
+          Understanding what students
+          <span> expect.</span>
+        </h2>
+
+        <p className="section-intro">
+          Each extracted expectation is classified according to both its
+          thematic category and its sentiment.
+        </p>
+
+        <div className="metrics">
+
+          <div className="metric">
+            <span>CATEGORY</span>
+
+            <h3>Learning</h3>
+
+            <p>
+              Expectations related to learning opportunities, knowledge,
+              and educational development.
+            </p>
+          </div>
+
+
+          <div className="metric">
+            <span>CATEGORY</span>
+
+            <h3>Networking</h3>
+
+            <p>
+              Expectations related to meeting people, building connections,
+              and professional networking.
+            </p>
+          </div>
+
+
+          <div className="metric">
+            <span>CATEGORY</span>
+
+            <h3>Career</h3>
+
+            <p>
+              Expectations related to career development and professional
+              opportunities.
+            </p>
+          </div>
+
+
+          <div className="metric">
+            <span>CATEGORY</span>
+
+            <h3>Technical Skills</h3>
+
+            <p>
+              Expectations related to developing technical knowledge and
+              practical skills.
+            </p>
+          </div>
+
+
+          <div className="metric">
+            <span>CATEGORY</span>
+
+            <h3>Events & Conferences</h3>
+
+            <p>
+              Expectations related to events, conferences, and professional
+              activities.
+            </p>
+          </div>
+
+
+          <div className="metric">
+            <span>CATEGORY</span>
+
+            <h3>Other</h3>
+
+            <p>
+              Expectations that do not fall into the predefined categories.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* Sentiment */}
+      <section className="project-section">
+
+        <div className="section-grid">
+
+          <h2>
+            Positive or
+            <span> negative?</span>
+          </h2>
+
+          <div className="section-content">
+
+            <p>
+              In addition to thematic classification, the system determines
+              the sentiment associated with each expectation.
+            </p>
+
+            <p>
+              <strong>Positive</strong> represents what the student wants,
+              expects, or would like to achieve.
+            </p>
+
+            <p>
+              <strong>Negative</strong> represents what the student explicitly
+              does not want, dislikes, or wants to avoid.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* Technical Architecture */}
+      <section className="project-section">
+
+        <div className="section-number">
+          05 — TECHNICAL ARCHITECTURE
         </div>
 
         <div className="section-grid">
@@ -236,21 +411,25 @@ export default function HandwrittenFeedbackPage() {
           <div className="section-content">
 
             <p>
-              Instead of relying exclusively on traditional OCR engines,
-              the system uses Gemini Vision to interpret handwritten
-              documents and extract their content.
+              The system uses Gemini Vision to interpret handwritten documents
+              and extract their textual content.
             </p>
 
             <p>
-              The extracted information is then processed by the
-              classification pipeline to identify student expectations
-              and determine their sentiment.
+              The extracted text is then processed by the classification
+              pipeline to identify individual expectations and determine
+              their category and sentiment.
             </p>
 
             <p>
               The backend exposes the processing pipeline through an API,
-              while the interface allows users to upload individual
-              documents and inspect the resulting analysis.
+              while the interface allows users to analyze individual
+              documents interactively.
+            </p>
+
+            <p>
+              A batch processing pipeline is also available for analyzing
+              multiple documents and generating structured outputs.
             </p>
 
           </div>
@@ -259,15 +438,57 @@ export default function HandwrittenFeedbackPage() {
 
       </section>
 
+       {/* Project Demo */}
+<section className="project-section">
+
+  <div className="section-number">
+    03 — PROJECT DEMO
+  </div>
+
+  <h2 className="section-title">
+    From document
+    <span> to insights.</span>
+  </h2>
+
+  <div className="project-gallery">
+
+    <div className="gallery-item">
+      <img
+        src="/projects/handwritten-feedback/upload.png"
+        alt="Handwritten feedback upload interface"
+      />
+      <p>01 — Upload a handwritten document</p>
+    </div>
+
+    <div className="gallery-item">
+      <img
+        src="/projects/handwritten-feedback/analysis.png"
+        alt="Handwritten feedback analysis"
+      />
+      <p>02 — Transcription and expectation classification</p>
+    </div>
+
+    <div className="gallery-item">
+      <img
+        src="/projects/handwritten-feedback/results.png"
+        alt="Handwritten feedback analysis results"
+      />
+      <p>03 — Structured analysis results</p>
+    </div>
+
+  </div>
+
+</section>
+
       {/* Features */}
       <section className="project-section">
 
         <div className="section-number">
-          04 — FEATURES
+          06 — FEATURES
         </div>
 
         <h2 className="section-title">
-          Designed for both
+          Built for both
           <span> interactive and batch analysis.</span>
         </h2>
 
@@ -280,11 +501,12 @@ export default function HandwrittenFeedbackPage() {
             <h3>Single Document</h3>
 
             <p>
-              Upload a handwritten feedback form and immediately obtain
-              its transcription and classification results.
+              Upload a handwritten feedback form and obtain its transcription,
+              extracted expectations, and classification results.
             </p>
 
           </div>
+
 
           <div className="metric">
 
@@ -293,7 +515,7 @@ export default function HandwrittenFeedbackPage() {
             <h3>Multiple Documents</h3>
 
             <p>
-              Process several handwritten forms automatically through the
+              Process multiple handwritten forms automatically through the
               batch pipeline and generate structured outputs.
             </p>
 
@@ -303,11 +525,12 @@ export default function HandwrittenFeedbackPage() {
 
       </section>
 
+
       {/* Technology */}
       <section className="project-section">
 
         <div className="section-number">
-          05 — TECHNOLOGY
+          07 — TECHNOLOGY
         </div>
 
         <h2 className="section-title">
@@ -340,6 +563,7 @@ export default function HandwrittenFeedbackPage() {
         </div>
 
       </section>
+
 
       {/* Final CTA */}
       <section className="project-end">
@@ -374,6 +598,7 @@ export default function HandwrittenFeedbackPage() {
         </div>
 
       </section>
+
 
       {/* Footer */}
       <footer className="project-footer">

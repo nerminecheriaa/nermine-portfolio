@@ -15,6 +15,7 @@ export default function SentimentAnalysisPage() {
         </Link>
       </nav>
 
+
       {/* Hero */}
       <section className="project-hero">
 
@@ -28,13 +29,13 @@ export default function SentimentAnalysisPage() {
         </h1>
 
         <p className="project-tagline">
-          End-to-End NLP Classification System
+          End-to-End NLP Classification with Fine-Tuned DistilBERT
         </p>
 
         <p className="project-description">
           An end-to-end sentiment analysis system built around a fine-tuned
-          DistilBERT model, exposed through a production-ready FastAPI
-          service for real-time and batch inference.
+          DistilBERT model, exposed through a production-ready FastAPI REST API
+          and containerized with Docker.
         </p>
 
         <div className="project-buttons">
@@ -49,15 +50,18 @@ export default function SentimentAnalysisPage() {
           </a>
 
           <a
-            href="#overview"
+            href="https://huggingface.co/nermine22/distilbert-sentiment-imdb"
+            target="_blank"
+            rel="noopener noreferrer"
             className="project-button secondary"
           >
-            Explore project ↓
+            View Model ↗
           </a>
 
         </div>
 
       </section>
+
 
       {/* Project information */}
       <section className="project-info">
@@ -73,19 +77,20 @@ export default function SentimentAnalysisPage() {
         </div>
 
         <div>
-          <span>FOCUS</span>
-          <strong>NLP · Deep Learning</strong>
+          <span>DOMAIN</span>
+          <strong>NLP · Sentiment Analysis</strong>
         </div>
 
         <div>
-          <span>STATUS</span>
-          <strong>Deployed</strong>
+          <span>DEPLOYMENT</span>
+          <strong>Docker · Hugging Face</strong>
         </div>
 
       </section>
 
+
       {/* Overview */}
-      <section id="overview" className="project-section">
+      <section className="project-section">
 
         <div className="section-number">
           01 — OVERVIEW
@@ -94,28 +99,28 @@ export default function SentimentAnalysisPage() {
         <div className="section-grid">
 
           <h2>
-            From raw text to
-            <span> sentiment predictions.</span>
+            From raw text
+            <span> to sentiment.</span>
           </h2>
 
           <div className="section-content">
 
             <p>
-              Sentiment analysis is a fundamental Natural Language Processing
-              task used to determine whether a piece of text expresses a
-              positive or negative sentiment.
+              The goal of this project was to build a complete NLP pipeline
+              capable of automatically classifying text according to its
+              sentiment.
             </p>
 
             <p>
-              This project implements an end-to-end NLP pipeline based on
-              DistilBERT, a lightweight Transformer architecture designed
-              for efficient language understanding.
+              A DistilBERT transformer model was fine-tuned on the IMDB
+              sentiment dataset to distinguish between positive and negative
+              reviews.
             </p>
 
             <p>
-              The trained model is exposed through a FastAPI REST API,
-              allowing applications to perform both individual and batch
-              sentiment predictions.
+              The trained model was then integrated into a FastAPI backend,
+              providing REST endpoints for both individual predictions and
+              batch CSV inference.
             </p>
 
           </div>
@@ -124,16 +129,17 @@ export default function SentimentAnalysisPage() {
 
       </section>
 
-      {/* ML Pipeline */}
+
+      {/* Pipeline */}
       <section className="project-section">
 
         <div className="section-number">
-          02 — MACHINE LEARNING PIPELINE
+          02 — ML PIPELINE
         </div>
 
         <h2 className="section-title">
-          From dataset
-          <span> to deployed model.</span>
+          A complete
+          <span> NLP pipeline.</span>
         </h2>
 
         <div className="workflow">
@@ -142,76 +148,74 @@ export default function SentimentAnalysisPage() {
             <span>01</span>
 
             <div>
-              <h3>Dataset Preparation</h3>
-
+              <h3>Input Text</h3>
               <p>
-                A subset of the IMDB movie review dataset is prepared and
-                formatted for supervised binary sentiment classification.
+                A text review is submitted to the sentiment analysis system.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>02</span>
 
             <div>
-              <h3>Text Tokenization</h3>
-
+              <h3>Tokenization</h3>
               <p>
-                Input reviews are tokenized using the DistilBERT tokenizer
-                before being passed to the neural network.
+                The input text is transformed into model-compatible tokens
+                using the DistilBERT tokenizer.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>03</span>
 
             <div>
-              <h3>Model Fine-Tuning</h3>
-
+              <h3>Fine-Tuned DistilBERT</h3>
               <p>
-                DistilBERT is fine-tuned on the sentiment classification
-                task using labeled movie reviews.
+                The fine-tuned transformer analyzes the semantic information
+                contained in the input.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>04</span>
 
             <div>
-              <h3>Model Evaluation</h3>
-
+              <h3>Classification</h3>
               <p>
-                The trained model is evaluated using classification metrics
-                including accuracy and F1-score.
+                The model predicts whether the input expresses a positive or
+                negative sentiment.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>05</span>
 
             <div>
-              <h3>API Integration</h3>
-
+              <h3>REST API</h3>
               <p>
-                The trained model is integrated into a FastAPI application
-                exposing REST endpoints for inference.
+                FastAPI exposes the trained model through simple REST
+                endpoints.
               </p>
             </div>
           </div>
+
 
           <div className="workflow-step">
             <span>06</span>
 
             <div>
               <h3>Deployment</h3>
-
               <p>
-                The application is containerized with Docker and deployed
-                for accessible model inference.
+                The application is containerized with Docker and deployed on
+                Hugging Face Spaces.
               </p>
             </div>
           </div>
@@ -220,50 +224,12 @@ export default function SentimentAnalysisPage() {
 
       </section>
 
-      {/* Model */}
+
+      {/* Model performance */}
       <section className="project-section">
 
         <div className="section-number">
-          03 — MODEL
-        </div>
-
-        <div className="section-grid">
-
-          <h2>
-            Fine-tuning
-            <span> DistilBERT.</span>
-          </h2>
-
-          <div className="section-content">
-
-            <p>
-              DistilBERT was selected as a lightweight alternative to larger
-              Transformer architectures while maintaining strong performance
-              for text classification.
-            </p>
-
-            <p>
-              The model was fine-tuned specifically for binary sentiment
-              classification using labeled IMDB reviews.
-            </p>
-
-            <p>
-              The resulting model achieved strong performance while remaining
-              lightweight enough to be integrated into an API-based
-              application.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* Evaluation */}
-      <section className="project-section">
-
-        <div className="section-number">
-          04 — EVALUATION
+          03 — MODEL PERFORMANCE
         </div>
 
         <h2 className="section-title">
@@ -272,84 +238,151 @@ export default function SentimentAnalysisPage() {
         </h2>
 
         <p className="section-intro">
-          The model was evaluated on a 3,000-sample subset of the IMDB
-          dataset using standard classification metrics.
+          The fine-tuned DistilBERT model was evaluated on the IMDB dataset
+          using standard classification metrics.
         </p>
 
         <div className="metrics">
 
           <div className="metric">
-
             <span>ACCURACY</span>
 
             <h3>89.4%</h3>
 
             <p>
-              Percentage of correctly classified positive and negative
-              reviews.
+              Overall proportion of correctly classified sentiment examples.
             </p>
-
           </div>
 
+
           <div className="metric">
+            <span>F1 SCORE</span>
 
-            <span>F1-SCORE</span>
-
-            <h3>0.896</h3>
+            <h3>89.6%</h3>
 
             <p>
-              Harmonic mean of precision and recall for the binary
-              classification task.
+              Balanced measure combining precision and recall for sentiment
+              classification.
             </p>
+          </div>
 
+
+          <div className="metric">
+            <span>DATASET</span>
+
+            <h3>IMDB</h3>
+
+            <p>
+              Sentiment classification dataset used for fine-tuning and
+              evaluation.
+            </p>
+          </div>
+
+
+          <div className="metric">
+            <span>TRAINING SIZE</span>
+
+            <h3>3K Samples</h3>
+
+            <p>
+              A subset of approximately 3,000 IMDB examples was used for the
+              project.
+            </p>
           </div>
 
         </div>
 
       </section>
+
 
       {/* API */}
       <section className="project-section">
 
         <div className="section-number">
-          05 — API & DEPLOYMENT
+          04 — API
         </div>
 
-        <div className="section-grid">
+        <h2 className="section-title">
+          Designed as a
+          <span> usable service.</span>
+        </h2>
 
-          <h2>
-            Turning the model into a
-            <span> usable service.</span>
-          </h2>
+        <p className="section-intro">
+          The trained model is exposed through a FastAPI REST interface
+          supporting both single-text and batch inference.
+        </p>
 
-          <div className="section-content">
+        <div className="technology-grid">
 
-            <p>
-              The fine-tuned model is exposed through a FastAPI REST service,
-              making the NLP model accessible to external applications.
+          <div>
+            <span>METHOD</span>
+            <strong>GET</strong>
+
+            <p className="api-description">
+              Health check endpoint used to verify that the service is running.
             </p>
+          </div>
 
-            <p>
-              The API supports both individual text predictions and batch
-              inference from CSV files.
+
+          <div>
+            <span>ENDPOINT</span>
+            <strong>/health</strong>
+
+            <p className="api-description">
+              Returns the current status of the API.
             </p>
+          </div>
 
-            <p>
-              Docker is used to package the application and its dependencies,
-              providing a reproducible deployment environment.
+
+          <div>
+            <span>METHOD</span>
+            <strong>POST</strong>
+
+            <p className="api-description">
+              Submit a single text for sentiment prediction.
             </p>
+          </div>
 
+
+          <div>
+            <span>ENDPOINT</span>
+            <strong>/predict</strong>
+
+            <p className="api-description">
+              Performs sentiment inference on a single text input.
+            </p>
+          </div>
+
+
+          <div>
+            <span>METHOD</span>
+            <strong>POST</strong>
+
+            <p className="api-description">
+              Upload a CSV file containing multiple text samples.
+            </p>
+          </div>
+
+
+          <div>
+            <span>ENDPOINT</span>
+            <strong>/predict-batch</strong>
+
+            <p className="api-description">
+              Runs batch sentiment prediction and returns the results.
+            </p>
           </div>
 
         </div>
 
       </section>
 
+
       {/* Technology */}
       <section className="project-section">
 
         <div className="section-number">
-          06 — TECHNOLOGY
+          05 — TECHNOLOGY
         </div>
 
         <h2 className="section-title">
@@ -365,13 +398,13 @@ export default function SentimentAnalysisPage() {
           </div>
 
           <div>
-            <span>FRAMEWORK</span>
-            <strong>Hugging Face Transformers</strong>
+            <span>DATASET</span>
+            <strong>IMDB</strong>
           </div>
 
           <div>
-            <span>BACKEND</span>
-            <strong>FastAPI</strong>
+            <span>API</span>
+            <strong>FastAPI + Uvicorn</strong>
           </div>
 
           <div>
@@ -380,18 +413,58 @@ export default function SentimentAnalysisPage() {
           </div>
 
           <div>
-            <span>INTERFACE</span>
-            <strong>Streamlit</strong>
+            <span>DEPLOYMENT</span>
+            <strong>Hugging Face Spaces</strong>
           </div>
 
           <div>
-            <span>LANGUAGE</span>
-            <strong>Python</strong>
+            <span>MODEL HOSTING</span>
+            <strong>Hugging Face</strong>
           </div>
 
         </div>
 
       </section>
+
+
+      {/* Architecture / Takeaway */}
+      <section className="project-section">
+
+        <div className="section-number">
+          06 — ENGINEERING TAKEAWAYS
+        </div>
+
+        <div className="section-grid">
+
+          <h2>
+            Beyond the
+            <span> model.</span>
+          </h2>
+
+          <div className="section-content">
+
+            <p>
+              This project focuses not only on model fine-tuning, but on the
+              complete path from an NLP model to a usable AI service.
+            </p>
+
+            <p>
+              It combines transformer fine-tuning, API development,
+              containerization, and cloud deployment into a single end-to-end
+              workflow.
+            </p>
+
+            <p>
+              The result is a reusable sentiment analysis service that can
+              process both individual inputs and larger batches of text.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       {/* Final CTA */}
       <section className="project-end">
@@ -416,16 +489,19 @@ export default function SentimentAnalysisPage() {
             View GitHub ↗
           </a>
 
-          <Link
-            href="/"
+          <a
+            href="https://huggingface.co/nermine22/distilbert-sentiment-imdb"
+            target="_blank"
+            rel="noopener noreferrer"
             className="project-button secondary"
           >
-            Back to portfolio
-          </Link>
+            View Model ↗
+          </a>
 
         </div>
 
       </section>
+
 
       {/* Footer */}
       <footer className="project-footer">

@@ -127,7 +127,62 @@ export default function AgenticRagPage() {
         </div>
 
       </section>
+{/* Project Highlights */}
+<section className="project-section">
 
+  <div className="section-number">
+    02 — PROJECT HIGHLIGHTS
+  </div>
+
+  <div className="highlights-grid">
+
+    <div className="highlight-card">
+      <span className="highlight-number">01</span>
+
+      <h3>Self-Correcting RAG</h3>
+
+      <p>
+        The system evaluates retrieved documents and dynamically decides
+        whether to answer, rewrite the query, or perform a web search.
+      </p>
+    </div>
+
+    <div className="highlight-card">
+      <span className="highlight-number">02</span>
+
+      <h3>Multi-Agent Verification</h3>
+
+      <p>
+        A generator and critic agent work together to verify the quality
+        and reliability of the final response.
+      </p>
+    </div>
+
+    <div className="highlight-card">
+      <span className="highlight-number">03</span>
+
+      <h3>RAG Evaluation</h3>
+
+      <p>
+        RAGAS is used to evaluate faithfulness and context precision
+        across the retrieval and generation pipeline.
+      </p>
+    </div>
+
+    <div className="highlight-card">
+      <span className="highlight-number">04</span>
+
+      <h3>Real-Time Interaction</h3>
+
+      <p>
+        The frontend provides a streaming interface that allows users
+        to interact with the research agent in real time.
+      </p>
+    </div>
+
+  </div>
+
+</section>
 
       {/* Architecture */}
       <section className="project-section">
